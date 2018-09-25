@@ -1,0 +1,6 @@
+git status 
+git add . 
+git commmit -m "..."
+git status --- "zeleno"
+git pull --rebase 
+git push
