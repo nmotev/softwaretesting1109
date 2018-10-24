@@ -1,0 +1,51 @@
+Q1.
+SELECT * FROM Customers
+
+Q2.
+SELECT ContactName
+FROM Customers
+
+Q3.
+SELECT distinct city, country
+from customers
+
+Q4.
+insert into customers(customerid, customername, contactname, address, city, postalcode, country)
+values (100, 'Orlin Tenev', 'Bai Ganio', 'Lulin 10', 'Sofia', 1335, 'Bulgaria'),
+(101, 'Martin Ivanov', 'Sasho Dikov', 'Mladost 1', 'Sofia', 1518, 'Bulgaria'),
+(102, 'Gosho Lipov', 'Razvigor Popov', 'st. Benkovski 101', 'Plovdiv', 2215, 'Bulgaria');
+
+Q5.
+update employees
+set lastname = 'Davolio', firstname = 'Nancy'
+where employeeid = 2;
+
+Q6.?
+select c.categoryname
+from products p
+inner join categories c
+on p.categoryid = c.categoryid
+
+Q7.
+select * from employees
+order by lastname
+delete from employees
+where employeeid = 10
+
+Q8.
+select c.customername
+from orders o
+inner join customers c
+on o.customerid != c.customerid
+
+Q9.
+select * from products
+where price between 10 and 20
+and productname like '%ch%'
+
+Q10.
+select c.categoryid, count(*)
+from products p
+inner join categories c
+on p.categoryid = c.categoryid
+where productid >= 9
