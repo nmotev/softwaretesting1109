@@ -49,5 +49,3 @@ WHERE ProductName LIKE '%ch%' AND Price BETWEEN 10 AND 20
 SELECT * FROM Products
 WHERE ProductName LIKE '%ch%' AND Price BETWEEN 10 AND 20
 ORDER BY CategoryID DESC
-
-
