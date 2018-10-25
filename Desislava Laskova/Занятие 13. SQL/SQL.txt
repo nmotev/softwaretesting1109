@@ -1,0 +1,54 @@
+1.	Show all rows for Customers
+
+	SELECT * FROM Customers
+
+
+2.	Show only Contact name information for Customers
+
+	SELECT ContactName FROM Customers
+
+
+3.	Show all unique combinations between Cities and Countries for the customers
+
+	SELECT DISTINCT city, country FROM Customers
+
+
+4.	Insert 3 new Customers
+
+	INSERT INTO Customers (CustomerName, Address, City, PostalCode, Country)
+	VALUES ('Desislava Laskova', 'bul. Sveti Naum', 'Sofia', '1164', 'Bulgaria'),
+		('Ivan Ivanov', 'bul. Hristo Botev', 'Plovdiv', '1000', 'Bulgaria'),
+    		('Petyr Petrov', 'bul. Stamboliski', 'Burgas', '2000', 'Bulgaria');
+
+5.	Move all orders made by Andrew Fuller to Nancy Davolio
+
+	INSERT INTO Employees 
+	SELECT 
+	FROM Orders
+
+6.	Group all products by category and show category name
+	..................
+
+7.	Sort all employees by Last Name and delete the last one. Do not remember to move all his/her orders to another colleague
+	..................
+
+8.	Show all customers without orders
+
+	SELECT Customers.CustomerName, Orders.OrderID
+  	FROM Customers
+  	LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+  	WHERE Orders.OrderID IS NULL
+
+
+9.	Show all products including 'ch' in its name with price between 10 and 20
+	
+	SELECT * FROM Products
+  	WHERE ProductName LIKE '%ch%' AND Price BETWEEN 10 AND 20
+
+10.	Group all products from 9 by category and sort by count in descending order
+
+	SELECT * FROM Products
+   	WHERE ProductName LIKE '%ch%' AND Price BETWEEN 10 AND 20
+   	ORDER BY CategoryID DESC
+
+
