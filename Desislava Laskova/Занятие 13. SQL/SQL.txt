@@ -1,0 +1,53 @@
+1.
+SELECT * FROM Customers
+
+
+2.
+SELECT ContactName FROM Customers
+
+
+3.
+SELECT DISTINCT City, Country FROM Customers
+
+
+4.
+INSERT INTO Customers (CustomerName, Address, City, PostalCode, Country)
+VALUES  ('Martin Mihov', 'ul.Samara', 'Sofia', '1000', 'Bulgaria'),
+	('Ivan Stoqnov', 'ul.Hristo Botev', 'Plovdiv', '1514', 'Bulgaria'),
+    	('Viktor Petrov', 'ul.Hadji Dimitur', 'Varna', '2000', 'Bulgaria');
+
+5.
+UPDATE Orders
+SET EmployeeID=2
+WHERE EmployeeID=1
+
+6.
+SELECT * FROM Employees
+ORDER BY LastName
+
+UPDATE Orders
+SET EmployeeID=2
+WHERE EmployeeID=10
+
+DELETE FROM Employees
+WHERE EmployeeID=10
+
+7.
+
+8.
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+WHERE Orders.OrderID IS NULL
+
+
+9.
+SELECT * FROM Products
+WHERE ProductName LIKE '%ch%' AND Price BETWEEN 10 AND 20
+
+10.
+SELECT * FROM Products
+WHERE ProductName LIKE '%ch%' AND Price BETWEEN 10 AND 20
+ORDER BY CategoryID DESC
+
+

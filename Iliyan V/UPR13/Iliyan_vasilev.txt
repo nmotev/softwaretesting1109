@@ -1,0 +1,47 @@
+1. SELECT * FROM Customers;
+
+2. SELECT contactname FROM Customers;
+
+3. SELECT distinct city,country FROM Customers;
+
+4. INSERT INTO Customers (customerid, CustomerName, ContactName, Address,City, PostalCode, Country)
+VALUES ('93','Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway')
+,('94','ilian','tosho','vutovo 21','sofia','4006','bulgaria')
+,('95','ivanovo','ne se predavai','josifov21','Stavanger','4006','Norway');
+
+5. UPDATE orders
+SET EmployeeID='1'
+WHERE EmployeeID='2';
+
+6. select Categoryname from products p
+join categories c on
+p.categoryid = c.categoryid
+group by Categoryname
+
+
+7.
+UPDATE orders
+SET employeeid = (select max(employeeid)-1 from orders)
+WHERE employeeid in (select max(employeeid) from orders);
+
+delete from employees
+where employeeid in (select max(employeeid) from employees);
+
+select * from employees
+order by lastname;
+
+8. select distinct  * from customers c
+left outer join orders o on
+c.customerid = o.customerid
+where o.Orderid is null
+
+
+9.select * from products
+
+where ProductName like '%ch%' and price between 10 and 20
+
+10. select * from products
+where productid not between 1 and 9 - // tuk 9 vkluchva li se ili ne se vkluchva?
+group by categoryid
+order by  count(categoryid) desc
+
