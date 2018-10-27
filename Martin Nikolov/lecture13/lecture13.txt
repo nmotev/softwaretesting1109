@@ -1,0 +1,39 @@
+1.Show all rows for Customers
+SELECT * FROM Customers;
+
+2.Show only Contact name information for Customers
+SELECT ContactName FROM Customers;
+
+
+3.Show all unique combinations between Cities and Countries for the customers
+SELECT distinct City, Country FROM Customers
+
+
+4.Insert 3 new Customers
+INSERT INTO CUSTOMERS (CustomerName, ContactName, Address, City, PostalCode, Country)
+VALUES ('Office1','Ivo Petrov','Dragan Cankov 23','Sofia','1001','Bulgaria');
+('Office2','Hristo Ivanov','Lozenec','Sofia','1000','Bulgaria');
+('Office3','Kristian Iliev','Oborishte','Sofia','1000','Bulgaria');
+
+
+5.Move all orders made by Andrew Fuller to Nancy Davolio
+UPDATE Orders
+SET EmployeID='1'
+WHERE EmplyeID='3';
+
+
+6.Group all products by category and show category name
+
+
+
+7.Sort all employees by Last Name and delete the last one. Do not remember to move all his/her orders to another colleague
+SELECT * FROM Employees
+ORDER BY LastName;
+UPDATE Orders
+SET EmployeeID ='1'
+WHERE EmployeeID = '3';
+DELETE FROM Employees
+WHERE EmployeeID = 3;
+
+
+8.Show all customers without orders
