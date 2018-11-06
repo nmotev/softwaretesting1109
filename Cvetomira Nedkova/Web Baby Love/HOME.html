@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HOME</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Bradley Hand ITC, Helvetica, sans-serif;
+    margin: 0;
+}
+
+
+.header {
+    padding: 50px;
+    text-align: center;
+    background: #FFEFD5;
+    color: DARKKHAKI;
+}
+
+
+.header h1 {
+    font-size: 80px;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #BDB76B;
+}
+
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+.navbar a.right {
+    float: right;
+}
+
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: DARKKHAKI;
+}
+
+
+.row {  
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+}
+
+
+.side {
+    -ms-flex: 30%; 
+    flex: 30%;
+    background-color: #F5DEB3  ;
+    padding: 20px;
+}
+
+
+.main {   
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Baby Love</h1>
+   <p>Pretty Little Treasures</p> 
+
+</div>
+
+<div class="navbar">
+  <a href="HOME.html">HOME</a>
+  <a href="BOYS.html">BOYS</a>
+  <a href="GIRLS.html">GIRLS</a>
+  <a href="CONTACTS.html" class="right">CONTACTS</a>
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>Welcome to BABY LOVE Christmas Shop</h2>
+    
+      <img src="christmas5.jpg" alt="Christmas" width="300" height="400">
+      <p>Merry Christmas from BABY LOVE! <br>Find everything you need this festive season at the BABY LOVE Christmas Shop</p>
+      <h3>CHRISTMAS SHOP</h3>
+      <img src="christmas.jpg" alt="Christmas" width="200" height="200">
+        <img src="christmas2.jpg" alt="Christmas" width="200" height="200">
+         <img src="christmas3.jpg" alt="Christmas" width="200" height="200">
+          <img src="christmas4.jpg" alt="Christmas" width="200" height="200">
+    
+  </div>
+  <div class="main">
+      <h2>JUST LANDED</h2>
+      <img src="JUSTLANDED.jpg" alt="NEW ARRIVALS" width="1000" height="500">
+      
+      <p>NEW ARRIVALS JUST LANDED</p>
+       <img src="justlanded1.jpg" alt="JUSTLANDED" width="200" height="200">
+       <img src="justlanded2.jpg" alt="JUSTLANDED" width="200" height="200">
+       <img src="justlanded3.jpg" alt="JUSTLANDED" width="200" height="200">
+       <img src="justlanded4.jpg" alt="JUSTLANDED" width="200" height="200">
+       <img src="justlanded5.jpg" alt="JUSTLANDED" width="200" height="200">
+       <img src="justlanded6.jpg" alt="JUSTLANDED" width="200" height="200">
+       <img src="justlanded7.jpg" alt="JUSTLANDED" width="200" height="200">
+       <img src="justlanded8.jpg" alt="JUSTLANDED" width="200" height="200">
+       <img src="justlanded9.jpg" alt="JUSTLANDED" width="200" height="200">
+     	<img src="justlanded10.jpg" alt="JUSTLANDED" width="200" height="200">
+
+      <br>
+<p><b>Please answer the following questions:</p>
+<p><b>1. What is your favourite baby 1st Christas outfit?</p>
+<form action="">
+  <input type="radio" name="gender" value="male"> Little pudding outfit<br>
+  <input type="radio" name="gender" value="female"> Christmas jumper and skirt set<br>
+<input type="radio" name="gender" value="female"> Tutu rompersuit<br>
+<input type="radio" name="gender" value="female"> Elf outfit<br>
+</form>
+
+<p><b>2. Would you like to receive our monthly eNewsletter?</p>
+<form action="">
+  <input type="radio" name="gender" value="male"> YES<br>
+  <input type="radio" name="gender" value="female"> NO<br>
+</form>
+
+<h1>How would you like to receive our monthly eNewsletter?</h1>
+
+<form action="/action_page.php">
+  <input type="checkbox" name="vehicle1" value="Bike">By e-mail<br>
+  <input type="checkbox" name="vehicle2" value="Car">By post<br>
+  <input type="submit" value="Submit">
+</form>
+
+<p><b>Thank you</p>
+      
+  </div>
+</div>
+
+<div class="footer">
+  <h2>About us</h2>
+  <h2>Delivery and Return</h2>
+  <h2>Terms and Conditions</h2>
+  <h2>Cookies and Privacy Policy</h2>
+<h2>© 2018 BABY LOVE LTD. ALL RIGHTS RESERVED.</h2>
+</div>
+
+</body>
+</html>
